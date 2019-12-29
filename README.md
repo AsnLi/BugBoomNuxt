@@ -1,4 +1,4 @@
-# my-nuxt
+# BugBoomNuxt
 
 > My polished Nuxt.js project
 
