@@ -20,8 +20,8 @@
         <van-image :src="item"></van-image>
       </van-swipe-item>
     </van-swipe>
-    <nav class="block">
-      <div class="mx-4 flex justify-between shadow-md rounded-lg py-3" style="margin-top: -1.5rem;">
+    <nav class="block relative">
+      <div class="mx-4 flex justify-between shadow-md rounded-lg py-3 bg-white" style="margin-top: -1.5rem;">
         <nuxt-link v-for="linkItem in links" 
                   :key="linkItem.link" 
                   class="block md:flex md:justify-center w-full md:p-4 text-nuxt-green hover:no-underline text-center visited:text-nuxt-green px-1" 

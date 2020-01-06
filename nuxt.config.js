@@ -56,7 +56,8 @@ module.exports = {
   */
   plugins: [
     '@/plugins/vant-ui',
-    '@/plugins/axios',
+    '@/plugins/axios',    
+    '@/plugins/router',
     { src: '@/plugins/mock', ssr: true }
   ],
   /*

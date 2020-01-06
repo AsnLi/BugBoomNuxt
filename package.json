@@ -1,7 +1,7 @@
 {
-  "name": "my-nuxt",
+  "name": "jiaxiaoclass.com",
   "version": "1.0.0",
-  "description": "My polished Nuxt.js project",
+  "description": "The web project base on Nuxt.js",
   "author": "AsnLi",
   "private": true,
   "scripts": {
