@@ -25,6 +25,7 @@ module.exports = {
       ref  : 'origin/master',
       repo : 'git@github.com:AsnLi/BugBoomNuxt.git',
       path : '/var/www/production',
+      ssh_options: 'StrictHostKeyChecking=no',
       'post-deploy' : 'npm install && pm2 reload ecosystem.config.js -- run build',
       env: {
         "NODE_ENV": "production"
