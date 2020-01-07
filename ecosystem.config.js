@@ -16,7 +16,10 @@ module.exports = {
       NODE_ENV: 'production'
     }
   }],
-
+  /**
+   * Deployment section
+   * http://pm2.keymetrics.io/docs/usage/deployment/
+  */
   deploy : {
     production : {
       user : 'root', // Nginx服务器上的username
@@ -26,7 +29,7 @@ module.exports = {
       repo : 'git@github.com:AsnLi/BugBoomNuxt.git',
       path : '/var/www/production',
       ssh_options: 'StrictHostKeyChecking=no',
-      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js -- run build',
+      'post-deploy' : 'npm install && pm2 reload ecosystem.config.js -- run start',
       env: {
         "NODE_ENV": "production"
       }

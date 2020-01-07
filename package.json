@@ -6,7 +6,7 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development nodemon server/index.js --watch server",
-    "build": "nuxt build && npm start",
+    "build": "nuxt build",
     "pm2:prod": "pm2 deploy ecosystem.config.js production",
     "start": "cross-env NODE_ENV=production node server/index.js",
     "generate": "nuxt generate",
